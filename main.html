@@ -4,9 +4,28 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+
+        label, input { display: block; margin-bottom: 10px; }
+	</style>
 </head>
 
 <body>
+	
+	<form id='infoForm'>
+		<label for='fName'> First Name: </label>
+		<input type='text' id='fName' name='First Name' required >
+			
+		
+		<label for='LName'> Last Name: </label>
+		<input type='text' id='LName' name='Last Name' required >
+		<label for='mobile'> Phone Number: </label>
+			<input type='number' id='mobile' name='Phone Number' required >
+		<label for='emailID'> Email ID: </label>
+		<input type='email' id='emailID' name='Email ID' required >
+
+		 <input type="button" value="Submit" onclick="submitForm()">
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
